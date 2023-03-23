@@ -1,0 +1,51 @@
+{% if page.lang == "es" %}
+{% set services = services.es.services %}
+{% set serviceTitle = settings.es.serviceTitle %}
+{% set serviceDescription = settings.es.serviceDescription %}
+{% elif page.lang == "it" %}
+{% set services = services.it.services %}
+{% set serviceTitle = settings.it.serviceTitle %}
+{% set serviceDescription = settings.it.serviceDescription %}
+{% else %}
+{% set services = services.en.services %}
+{% set serviceTitle = settings.en.serviceTitle %}
+{% set serviceDescription = settings.en.serviceDescription %}
+{% endif %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<section id="services" class="">
+
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-lg text-center">
+            <h2 class="text-4xl font-bold leading-none tracking-tighter text-neutral-600 md:text-7xl lg:text-5xl">
+                {{serviceTitle}}</h2>
+
+            <p class="mt-4">
+                {{serviceDescription}}
+            </p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {% if services %}
+
+            {% for service in services %}
+            <div class="rounded-xl bg-gradient-to-r p-[1px] from-emerald-500 to-blue-500"> <a
+                    class="block rounded-xl bg-white border p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+                    href="">
+
+                    <i class="fa-2x {{service.icon}}"></i>
+                    <h2 class="mt-4 text-xl font-bold">{{service.service}}</h2>
+
+                    <p class="mt-1 text-sm">
+                        {{service.description}}
+                    </p>
+                </a>
+            </div>
+            {% endfor %}
+
+            {% endif %}
+        </div>
+
+
+    </div>
+</section>

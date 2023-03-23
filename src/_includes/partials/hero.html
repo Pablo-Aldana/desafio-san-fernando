@@ -1,0 +1,37 @@
+{% if page.lang == "es" %}
+{% set heroTitle = settings.es.heroTitle %}
+{% set heroSubTitle = settings.es.heroSubTitle %}
+{% set heroCallToAction = settings.es.heroCallToAction %}
+{% elif page.lang == "it" %}
+{% set heroTitle = settings.it.heroTitle %}
+{% set heroSubTitle = settings.it.heroSubTitle %}
+{% set heroCallToAction = settings.it.heroCallToAction %}
+{% else %}
+{% set heroTitle = settings.en.heroTitle %}
+{% set heroSubTitle = settings.en.heroSubTitle %}
+{% set heroCallToAction = settings.en.heroCallToAction %}
+{% endif %}
+<div class="pt-24">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!--Left Col-->
+        <div class="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left pr-8">
+            <p class="uppercase tracking-loose w-full text-gray-500"></p>
+            <h1
+                class="my-4 text-5xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-blue-500 to-pink-500">
+                {{heroTitle}}
+            </h1>
+            <p class="leading-normal text-2xl mb-8 text-gray-500">
+                {{heroSubTitle}}
+            </p>
+            <button
+                class="mx-auto lg:mx-0 hover:underline bg-white text-pink-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                {{heroCallToAction}}
+            </button>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-1/2 py-6 text-center bg-gradient-purple2">
+            <img class="w-full md:w-4/5 z-50" src="/static/img/hero.png" />
+        </div>
+
+    </div>
+</div>

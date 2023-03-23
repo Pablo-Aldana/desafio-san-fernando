@@ -1,0 +1,38 @@
+---
+name: Scintillam
+author: Scintillam
+url: "https://scintillam.com/"
+es:
+  heroTitle: "Usamos la tecnología para dar soluciones que aporten valor"
+  heroSubTitle: ""
+  heroCallToAction: "Contáctanos"
+  serviceTitle: "¿Qué sabemos hacer?"
+  serviceDescription: "Damos forma a tus proyectos haciendo uso de las tecnologías y metodologías adecuadas. Creemos que el análisis correcto dará con la solución que más se adecue a ti."
+  aboutTitle: "Digital Disruptors"
+  aboutDescription: "Ayudamos a tu empresa en su transformación digital, haciendo de la tecnología tu aliada en lugar de tu enemiga. Nuestra pasión es dar soluciones que aporten valor, innovando y volcando toda nuestra experiencia y conocimiento para dar forma a tu proyecto. "
+  navigationFooter: "Navegación"
+  footerSubtitle: "Digital Disruptors"
+  tagline: "Innovación & Pasión"
+en:
+  heroTitle: "Transform"
+  heroSubTitle: "Memos"
+  heroCallToAction: "Contact us"
+  serviceTitle:
+  serviceDescription:
+  aboutTitle: "Digital Disruptors"
+  aboutDescription: 
+  navigationFooter: "Navigation"
+  footerSubtitle: "Digital Disruptors"
+  tagline: "Innovación & Pasión"
+
+it:
+  heroTitle: "Transformamos"
+  heroSubTitle: "Memos"
+  heroCallToAction: "Contattaci"
+  serviceTitle:
+  serviceDescription:
+  aboutTitle:
+  aboutDescription:
+  navigationFooter: "Navigazione"
+  footerSubtitle: "Digital Disruptors"
+  tagline: "Innovación & Pasión"

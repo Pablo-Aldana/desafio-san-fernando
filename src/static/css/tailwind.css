@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+h1 {
+  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl text-neutral-600 font-bold leading-none tracking-tighter;
+}
+h2 {
+  @apply text-neutral-600 text-4xl font-bold leading-none tracking-tighter md:text-7xl lg:text-5xl
+}
+h3 {
+  @apply text-2xl font-bold mb-3 text-pink-500;
+}
+
+p {
+  @apply text-gray-500
+}
+a {
+  @apply text-pink-500
+}
+
+button {
+  /*@apply mx-auto lg:mx-0 bg-white text-pink-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition*/
+  @apply mx-auto  hover:underline bg-white text-pink-500 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none transform transition hover:scale-105 duration-300 ease-in-out
+
+}
+
+/*button:hover {
+  @apply underline scale-105 duration-300 ease-in-out
+}
+
+button:focus {
+  @apply underline scale-105 duration-300 ease-in-out
+}*/
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply bg-gray-800;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
