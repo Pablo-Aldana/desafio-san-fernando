@@ -1,24 +1,10 @@
 es:
   items:
-    - text: Sobre Nosotros
-      url: "#about"
-    - text: Servicios
-      url: "#services"
+    - text: Historia
+      url: "#historia"
+    - text: Pruebas
+      url: "#pruebas"
+    - text: Inscripciones
+      url: "#inscripciones" 
     - text: Contacto
-      url: "#contact"
-en:
-  items:
-    - text: About Us
-      url: "#about"
-    - text: Services
-      url: "#services"
-    - text: Contact
-      url: "#contact"
-it:
-  items:
-    - text: Chi Siamo
-      url: "#about"
-    - text: Servizi
-      url: "#services"
-    - text: Contatti
-      url: "#contact"
+      url: "#contacto"

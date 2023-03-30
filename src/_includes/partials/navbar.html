@@ -3,25 +3,26 @@
         x-data="{ isOpen: false }" @keydown.escape="isOpen = false" @click.away="isOpen = false">
         <!--Logo etc-->
         <div class="flex items-center w-1/2">
-            <a href="/" class="text-indigo-500 font-bold text-lg ">
-                <p
-                    class="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 via-blue-500 to-pink-500 font-['Permanent Marker']">
-                    Scintillam</p>
+            <a href="/" class="text-dsfprimary font-normal text-lg ">
+                <p class="font-capturesmallz font-normal text-dsfprimary">
+                    DESAFIO SAN FERNANDO</p>
             </a>
         </div>
 
         <!--Toggle button (hidden on large screens)-->
-        <div class="float-right w-1/2"><button @click="isOpen = !isOpen" type="button"
-                class="ml-auto block lg:hidden px-2 text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500"
+        <div class="float-right w-1/2 flex justify-end">
+            <button @click="isOpen = !isOpen" type="button"
+                class="ml-auto block lg:hidden px-2 text-white hover:text-white focus:outline-none focus:text-white"
                 :class="{ 'transition transform-180': isOpen }" aria-label="Menu">
-                <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                <svg class="h-6 w-6 fill-dsfprimary" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
                     <path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828 4.828z" />
                     <path x-show="!isOpen" fill-rule="evenodd"
                         d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
                 </svg>
             </button>
         </div>
+
 
         <!--Menu-->
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center "
@@ -38,7 +39,7 @@
                 {% for item in navItems %}
                 <li class="nav__item mr-3">
                     <a @click="isOpen = false"
-                        class="text-ml inline-block text-gray-500 no-underline hover:text-indigo-500 py-2 px-4"
+                        class="text-ml inline-block text-dsfgray no-underline hover:text-dsfterciary py-2 px-4"
                         href="{{ item.url }}">{{ item.text }}</a>
                 </li>
                 {% endfor %}

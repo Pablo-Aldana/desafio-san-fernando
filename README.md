@@ -1,12 +1,6 @@
-# scintillam-landing-page
+# Desafio San Fernando
 
-Landing Page for scintillam using NEAT stack for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
-
-It can be use as initial template for other projects.
-
-It has been setup to modify dinamically via CMS all the landing page content.
-
-It supports multilingual
+Landing Page for Desafio San Fernando using NEAT stack for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
 # DEPLOYMENT STATUS
 
@@ -14,7 +8,7 @@ It supports multilingual
 
 ## Live Demo
 
-[https://scintillam.com/](https://scintillam.com/)
+[https://desafiosanfernando.org/](https://desafiosanfernando.org/)
 
 ### Technologies used:
 
@@ -28,13 +22,13 @@ It supports multilingual
 ### 1\. Clone this Repository
 
 ```
-git clone https://github.com/Pablo-Aldana/scintillam-landing-page
+git clone https://github.com/Pablo-Aldana/desafio-san-fernando
 ```
 
 ### 2\. Navigate to the directory
 
 ```
-cd scintillam-landing-page
+cd desafio-san-fernando
 ```
 
 ### 3\. Install dependencies

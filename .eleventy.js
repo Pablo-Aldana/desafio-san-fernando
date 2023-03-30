@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     // any valid BCP 47-compatible language tag is supported
-    defaultLanguage: "en", // Required, this site uses "en"
+    defaultLanguage: "es", // Required, this site uses "en"
   });
   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
@@ -42,6 +42,9 @@ module.exports = function (eleventyConfig) {
 
   // Copy Image Folder to /_site
   eleventyConfig.addPassthroughCopy("./src/static/img");
+  // Copy video Folder to /_site
+
+  eleventyConfig.addPassthroughCopy("./src/static/video");
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");

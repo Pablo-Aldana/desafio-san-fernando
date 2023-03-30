@@ -1,18 +1,20 @@
 ---
-name: Scintillam
+name: Desafío San Fernando
 author: Scintillam
 url: "https://scintillam.com/"
 es:
-  heroTitle: "Usamos la tecnología para dar soluciones que aporten valor"
-  heroSubTitle: ""
-  heroCallToAction: "Contáctanos"
-  serviceTitle: "¿Qué sabemos hacer?"
-  serviceDescription: "Damos forma a tus proyectos haciendo uso de las tecnologías y metodologías adecuadas. Creemos que el análisis correcto dará con la solución que más se adecue a ti."
-  aboutTitle: "Digital Disruptors"
-  aboutDescription: "Ayudamos a tu empresa en su transformación digital, haciendo de la tecnología tu aliada en lugar de tu enemiga. Nuestra pasión es dar soluciones que aporten valor, innovando y volcando toda nuestra experiencia y conocimiento para dar forma a tu proyecto. "
+  heroTitle: "EL DESAFÍO SAN FERNANDO TE ESPERA"
+  heroSubTitle: "Descubre una experiencia única en el Circuito de Deporte y Naturaleza de Extremadura."
+  heroCallToAction: "Inscríbete"
+  serviceTitle: "LAS PRUEBAS"
+  serviceDescription: "El Desafío San Fernando ofrece una amplia variedad de pruebas para corredores y ciclistas de diferentes niveles. Los participantes pueden elegir entre la carrera de 10 km, la carrera de 21 km, la carrera de 40 km en bicicleta de montaña y la carrera de obstáculos infantil. Con opciones para todos los niveles y edades, el Desafío San Fernando es un evento para toda la familia."
+  aboutTitle: "¿QUÉ ES EL DESAFÍO SAN FERNANDO?"
+  aboutDescription: "El Desafío San Fernando es una emocionante carrera solidaria de caracter cívico-militar que se celebra cada año en Extremadura donde la mayor parte de la inscripción se dona a la Asamblea Local de la Cruz Roja de Badajoz."
+  aboutDescription2: "El Desafío San Fernando es una prueba deportiva de gran exigencia que desde sus inicio nació como una competición para celebrar San Fernando, el patrón de los Ingenieros del Ejercito de Tierra de España, y ha evolucionado hacia un medio para fomentar la cultura de defensa y promover el deporte y la naturaleza."
+  aboutDescription3: "El Desafío San Fernando es una de las pruebas más importantes del Circuito de Deporte y Naturaleza de Extremadura y cuenta con la participación de corredores civiles y militares de todo el país. ¡Únete a nosotros y vive la emoción del Desafío San Fernando!"
   navigationFooter: "Navegación"
   footerSubtitle: "Digital Disruptors"
-  tagline: "Innovación & Pasión"
+  tagline: "Animosorum ducum terra"
 en:
   heroTitle: "Transform"
   heroSubTitle: "Memos"

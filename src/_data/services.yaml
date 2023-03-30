@@ -1,24 +1,20 @@
 es:
   services:
-    - service: "Transformación Cloud"
-      description: "Diseño y migraciones al cloud, DEVOPS, AWS, GCP, Azure"
-      icon: fa-solid fa-cloud
-    - service: "Blockchain"
-      description: "Diseño, implementación e integración de soluciones Blockchain, Smart Contracts, DLTs, "
-      icon: fa-solid fa-cubes
-    - service: "Consultoría Digital"
-      description: "La tecnología y estrategia adecuada. Diseño de arquitecturas, oficina técnica, iOT, Agentes Conversacionales desarrollo y mantenimiento"
-      icon: fa-solid fa-users-between-lines
-    - service: "Diseño Web"
-      description: "Diseño de páginas webs y Landing pages personalizadas. Usamos la última tecnología para que tu web tenga la mejor puntuación Lighthouse y SEO. Headless CMS, JAMSTACK, tailwind, CDNs.."
-      icon: fa-solid fa-desktop
-    - service: Aplicaciones móviles
-      description: "Aumenta la fidelidad de los clientes  o da soluciones a problemas complejos con aplicaciones personalizas."
-      icon: fa-solid fa-mobile-screen-button
-    - service: "Diseño de Marca y marketing"
-      description: "Diseñamos tu marca a médida y damos soluciones de marketing para tu negocio; Email Marketing, Instagram, TikTok, Facebook."
-      icon: fa-brands fa-sketch
-en:
-  services: []
-it:
-  services: []
+    # - service: "Transformación Cloud"
+    #   description: "Diseño y migraciones al cloud, DEVOPS, AWS, GCP, Azure"
+    #   icon: fa-solid fa-cloud
+    # - service: "Blockchain"
+    #   description: "Diseño, implementación e integración de soluciones Blockchain, Smart Contracts, DLTs, "
+    #   icon: fa-solid fa-cubes
+    # - service: "Consultoría Digital"
+    #   description: "La tecnología y estrategia adecuada. Diseño de arquitecturas, oficina técnica, iOT, Agentes Conversacionales desarrollo y mantenimiento"
+    #   icon: fa-solid fa-users-between-lines
+    # - service: "Diseño Web"
+    #   description: "Diseño de páginas webs y Landing pages personalizadas. Usamos la última tecnología para que tu web tenga la mejor puntuación Lighthouse y SEO. Headless CMS, JAMSTACK, tailwind, CDNs.."
+    #   icon: fa-solid fa-desktop
+    # - service: Aplicaciones móviles
+    #   description: "Aumenta la fidelidad de los clientes  o da soluciones a problemas complejos con aplicaciones personalizas."
+    #   icon: fa-solid fa-mobile-screen-button
+    # - service: "Diseño de Marca y marketing"
+    #   description: "Diseñamos tu marca a médida y damos soluciones de marketing para tu negocio; Email Marketing, Instagram, TikTok, Facebook."
+    #   icon: fa-brands fa-sketch
