@@ -12,11 +12,13 @@
 {% set serviceDescription = settings.en.serviceDescription %}
 {% endif %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 <section id="pruebas" class="">
 
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
 
         <div class="mx-auto  text-center">
+
             <h2 class="text-4xl  leading-none tracking-tighter md:text-7xl lg:text-5xl">
                 {{serviceTitle}}</h2>
 
@@ -51,8 +53,7 @@
 
     </div>
     <!--10 BEGINS -->
-
-    <div class="h-screen bg-fixed bg-center bg-cover" style="background-image:url(/static/img/desafio_san_fernando_10k.jpg
+    <div class="h-screen bg-fixed  bg-center" style="background-image:url(/static/img/desafio_san_fernando_10k.jpg
         )" x-data="
             {show: false}" x-init="setTimeout(() => show = true, 1000)">
         <div class="flex flex-col justify-center h-full">
@@ -83,9 +84,8 @@
     </div>
     <!--21 BEGINS -->
 
-    <div class="h-screen bg-fixed bg-center bg-cover"
-        style="background-image:url(/static/img/desafio_san_fernando_21k.jpg)" x-data="{show: false}"
-        x-init="setTimeout(() => show = true, 1000)">
+    <div class="h-screen bg-fixed bg-center" style="background-image:url(/static/img/desafio_san_fernando_21k.jpg)"
+        x-data="{show: false}" x-init="setTimeout(() => show = true, 1000)">
         <div class="flex flex-col justify-center h-full">
             <div class="grid lg:grid-cols-[1fr_2fr] sm:auto-rows-min items-center">
                 <div class="flex items-center lg:items-start justify-center lg:justify-start md:mt-4 sm:mt-4">
@@ -114,8 +114,8 @@
         </div>
     </div>
     <!--40 BEGINS -->
-    <div class="h-screen bg-fixed bg-center bg-cover"
-        style="background-image:url(/static/img/desafio_san_fernando_40btt.jpg)" x-data="{show: false}"
+    <div class="h-screen bg-fixed bg-center
+    " style="background-image:url(/static/img/desafio_san_fernando_40btt.jpg)" x-data="{show: false}"
         x-init="setTimeout(() => show = true, 1000)">
         <div class="flex flex-col justify-center h-full">
             <div class="grid lg:grid-cols-[1fr_2fr] sm:auto-rows-min items-center">
@@ -141,9 +141,8 @@
         </div>
     </div>
     <!--CICLO BEGINS -->
-    <div class="h-screen bg-fixed bg-center bg-cover"
-        style="background-image:url(/static/img/desafio_san_fernando_ciclo.jpg)" x-data="{show: false}"
-        x-init="setTimeout(() => show = true, 1000)">
+    <div class="h-screen bg-fixed bg-center" style="background-image:url(/static/img/desafio_san_fernando_ciclo.jpg)"
+        x-data="{show: false}" x-init="setTimeout(() => show = true, 1000)">
         <div class="flex flex-col justify-center h-full">
             <div class="grid lg:grid-cols-[1fr_2fr] sm:auto-rows-min items-center">
                 <div class="flex items-center lg:items-start justify-center lg:justify-start md:mt-4 sm:mt-4">
@@ -172,9 +171,8 @@
         </div>
     </div>
     <!-- OCR BEGINS-->
-    <div class="h-screen bg-fixed bg-center bg-cover"
-        style="background-image:url(/static/img/desafio_san_fernando_ocr.jpg)" x-data="{show: false}"
-        x-init="setTimeout(() => show = true, 1000)">
+    <div class="h-screen bg-fixed bg-center" style="background-image:url(/static/img/desafio_san_fernando_ocr.jpg)"
+        x-data="{show: false}" x-init="setTimeout(() => show = true, 1000)">
         <div class="flex flex-col justify-center h-full">
             <div class="grid lg:grid-cols-[1fr_2fr] sm:auto-rows-min items-center">
                 <div class="flex items-center lg:items-start justify-center lg:justify-start md:mt-4 sm:mt-4">

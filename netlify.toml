@@ -2,24 +2,12 @@
   publish = "_site"
   command = "npm run build"
 
-  # Redirect any URLs with the language code in them already
-#[[redirects]]
-#  from = "/es/*"
-#  to = "/:splat"
-#  status = 301
-#  force = true
+
 
 # Important: Per shadowing rules, URLs for the
 # _non-default_ language-specific content files
 # are served without redirects.
 
-# Redirect for end-user’s browser preference override
-#[[redirects]]
-#  from = "/*"
-#  to = "/en/:splat"
-#  status = 302
-#  force = true
-#  conditions = {Language = ["en"]}
 
 [[redirects]]
   from = "/static/*"
@@ -27,34 +15,9 @@
   status = 200
   #force = true
 
-[[redirects]]
-  from = "/*"
-  to = "/es/:splat"
-  status = 302
-  force = true
-  conditions = {Language = ["es"]}
-
-
-# Redirect for end-user’s browser preference override
-[[redirects]]
-  from = "/*"
-  to = "/it/:splat"
-  status = 302
-  force = true
-  conditions = {Language = ["it"]}
-
+# Default
 [[redirects]]
   from = "/*"
   to = "/:splat"
   status = 200
   #force = true
-
-
-
-# Default
-#[[redirects]]
-#  from = "/*"
-#  to = "/:splat"
-#  status = 200
-#  force = true
-#  conditions = {Language = ["en"]}
