@@ -54,3 +54,7 @@ npm run start
 ## Deployment
 
 It does deploy automatically via Netlify when push to main.
+
+## Credit
+
+Created by [VIVE](https://vivelaapp.es) a [Scintillam](https://www.scintillam.com) Company
