@@ -4,12 +4,7 @@ es:
       url: "#historia"
     - text: Pruebas
       url: "#pruebas"
-<<<<<<< HEAD
     - text: ¡INSCRIBETE YA!
       url: "https://fenles.com/evento/desafio-san-fernando-21-9-2025-brigada-extremadura-xi?utm_source=newsletter&utm_medium=email&utm_campaign=dsf" 
-=======
-    - text: Pre - Inscripciòn
-      url: "https://fenles.com/evento/desafio-san-fernando-pre-inscripciones-8-6-2025-brigada-extremadura-xi" 
->>>>>>> origin/main
     - text: Contacto
       url: "#contacto"
