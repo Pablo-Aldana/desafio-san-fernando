@@ -1,0 +1,64 @@
+{% if page.lang == "es" %}
+{% set heroTitle = settings.es.heroTitle %}
+{% set heroSubTitle = settings.es.heroSubTitle %}
+{% set heroCallToAction = settings.es.heroCallToAction %}
+{% elif page.lang == "it" %}
+{% set heroTitle = settings.it.heroTitle %}
+{% set heroSubTitle = settings.it.heroSubTitle %}
+{% set heroCallToAction = settings.it.heroCallToAction %}
+{% else %}
+{% set heroTitle = settings.en.heroTitle %}
+{% set heroSubTitle = settings.en.heroSubTitle %}
+{% set heroCallToAction = settings.en.heroCallToAction %}
+{% endif %}
+<div class="relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
+
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-0" poster="/static/video/desafio_thumb.jpg"
+        autoplay muted loop playsinline>
+        <source src="/static/video/desafio.mov" type="video/mp4">
+        <!-- Add more source tags for other video file types (e.g., WebM, Ogg) -->
+    </video>
+    <!-- <div class="pt-24 bg-gradient-to-b from-black via-black to-transparent"> -->
+    <div class="pt-24 bg-black">
+
+        <div class="relative container px-3 mx-auto flex flex-wrap  md:flex-row items-center py-24 z-20">
+            <div class="container px-3 mx-auto flex flex-wrap  md:flex-row items-center">
+                <!--Left Col-->
+                <div class="flex flex-col w-full md:w-1/2 justify-center items-start text-center md:text-left md:pr-8">
+                    <p class="uppercase tracking-loose w-full text-gray-500"></p>
+                    <!-- <h1
+                        class="my-4 text-5xl font-bold font-captureit2 leading-tight bg-clip-text text-transparent bg-gradient-to-br from-white  to-dsfyellow"> -->
+                    <!-- <h1 class="my-4 text-5xl font-bold font-captureit2 leading-tight dsfyellow">
+                        {{heroTitle}}
+                    </h1> -->
+                    <h1 class="inline my-4 text-5xl font-normal font-capturesmallz leading-tight text-dsfprimary">
+                        {{heroTitle}}
+                    </h1>
+
+                    <p class="leading-normal text-2xl mb-8 text-white font-montserrat">
+                        {{heroSubTitle}}
+                    </p>
+                    <a class="mx-auto lg:mx-0 hover:underline bg-dsfprimary text-white font-montserrat  rounded-lg my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+<<<<<<< HEAD
+                        href="https://fenles.com/evento/desafio-san-fernando-pre-inscripciones-8-6-2025-brigada-extremadura-xi">
+=======
+                        href="https://fenles.com/evento/desafio-san-fernando-21-9-2025-brigada-extremadura-xi?utm_source=newsletter&utm_medium=email&utm_campaign=dsf">
+>>>>>>> cfbbf05 (modifiche effetuate agosto 2025)
+                        {{heroCallToAction}}
+                    </a>
+                </div>
+                <!--Right Col-->
+                <!--<div class="w-full md:w-1/2 py-6 text-center">
+            <img class="w-full md:w-4/5 z-50" src="/static/img/hero.png" />
+        </div>-->
+
+
+                <!-- Your hero content here -->
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
