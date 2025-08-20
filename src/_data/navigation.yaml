@@ -7,6 +7,6 @@ es:
     - text: ¡INSCRIBETE YA!
       url: "https://fenles.com/evento/desafio-san-fernando-21-9-2025-brigada-extremadura-xi?utm_source=newsletter&utm_medium=email&utm_campaign=dsf" 
     - text: Reglamento
-      url: "#reglamento"
+      url: "/reglamento"
     - text: Contacto
       url: "#contacto"
