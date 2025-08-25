@@ -35,6 +35,16 @@
                 {% endif %}
                 {% if navItems %}
                 <ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center">
+                    <nav>
+
+    <li><a href="{{ baseUrl }}#about">Chi siamo</a></li>
+    <li><a href="{{ baseUrl }}#services">Servizi</a></li>
+    <li><a href="{{ baseUrl }}#contact">Contattaci</a></li>
+ 
+                    
+                    
+                    
+                    
                     {% for item in navItems %}
                     <li class="nav__item mr-3">
                         <a @click="isOpen = false"

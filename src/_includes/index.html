@@ -1,71 +1,67 @@
 <!DOCTYPE html>
-<html lang="{{page.lang}}">
+<html lang="{{ page.lang }}">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        {{title}}
-    </title>
+    <title>{{ title }}</title>
+
     {% if description %}
-    <meta name="description" content="{{description}}" />
+    <meta name="description" content="{{ description }}" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="{{title}}" />
-    <meta property="og:description" content="{{description}}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
     <meta property="og:image" content="https://desafiosanfernando.org/static/img/desafio_san_fernando_cover.jpg" />
     <meta property="og:url" content="https://desafiosanfernando.org" />
     <meta property="og:type" content="article" />
     <meta property="fb:app_id" content="152261874439169" />
-    <!--<meta name="facebook-domain-verification" content="paakeft4hsthvo3oxv2xgompa4mhqe" />
-   -->
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="desafiosanfernando.org" />
-    <meta property="twitter:url" content="desafiosanfernando.org" />
-
-
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
+    <meta property="twitter:url" content="https://desafiosanfernando.org" />
 
     <meta property="og:image:width" content="1080" />
     <meta property="og:image:height" content="1080" />
     <link rel="icon" href="https://desafiosanfernando.org/static/img/desafio_san_fernando_cover.jpg" />
     {% endif %}
+
     {% block head %}{% endblock %}
+
     <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
-    {% if prism == true %}
-    <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
+    {% if prism %}
+    <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css" />
     {% endif %}
-    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <script async src="https://analytics.umami.is/script.js"
         data-website-id="b6de0a2d-6e57-4c74-b2da-5b2f085742cd"></script>
 
 </head>
 
 <body class="bg-black">
+
+    {% set baseUrl = "" %}
     {% include "./partials/navbar.html" %}
+
     {% include "./partials/hero.html" %}
     {% include "./partials/about.html" %}
-
     {% include "./partials/services.html" %}
     {% include "./partials/cta.html" %}
     {% include "./partials/contact.html" %}
-    <!-- {{ content | safe }} -->
-
     {% include "./partials/footer.html" %}
 
     <script src="/static/js/alpine.js"></script>
 
     {% if path == "home" %}
     <!-- Netlify Identity Widget -->
-    <!-- Needed only if you are using Netlify Identity feature -->
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     {% endif %}
 
 </body>
+
 
 </html>
