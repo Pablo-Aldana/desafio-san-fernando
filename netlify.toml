@@ -1,0 +1,23 @@
+[build]
+  publish = "_site"
+  command = "npm run build"
+
+
+
+# Important: Per shadowing rules, URLs for the
+# _non-default_ language-specific content files
+# are served without redirects.
+
+
+[[redirects]]
+  from = "/static/*"
+  to = "/static/:splat"
+  status = 200
+  #force = true
+
+# Default
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  #force = true

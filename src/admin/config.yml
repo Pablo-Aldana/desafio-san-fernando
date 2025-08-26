@@ -1,0 +1,183 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: main
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: pablo-aldana/scintillam-landing-page
+media_folder: "src/static/img"
+public_folder: "/static/img"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+locale: es
+# publish_mode: editorial_workflow
+collections:
+  - label: "Blog"
+    name: "blog"
+    folder: "src/posts"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "items"
+        file: "src/_data/navigation.yaml"
+        fields:
+         - name: es
+           label: 'Español'
+           widget: object
+           allow_add: false
+           collapsed: false
+           fields:
+            - label: Barra Navegación
+              name: items
+              widget: list          
+              fields:
+                - { label: Titulo, name: title, widget: string }
+                - { label: URL, name: url, widget: string }
+         - name: en
+           label: 'English'
+           widget: object
+           allow_add: false
+           collapsed: false
+           fields:
+            - label: Nav Items
+              name: items
+              widget: list          
+              fields:
+                - { label: Title, name: title, widget: string }
+                - { label: URL, name: url, widget: string }        
+         - name: it
+           label: 'Italiano'
+           widget: object
+           allow_add: false
+           collapsed: false
+           fields:
+            - label: Menu
+              name: items
+              widget: list          
+              fields:
+                - { label: Titolo, name: title, widget: string }
+                - { label: URL, name: url, widget: string }  
+      - label: "Quick Links"
+        name: "links"
+        file: "src/_data/quicklinks.yaml"
+        fields:
+          - label: Nav Items
+            name: links
+            widget: list
+            collapsed: false
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: URL, name: url, widget: string }
+              - { label: Description, name: desc, widget: string }
+      - label: "Pruebas"
+        name: "pruebas"
+        file: "src/_data/services.yaml"
+        fields:
+         - name: es
+           label: 'Español'
+           widget: object
+           allow_add: true
+           collapsed: false
+           fields:
+            - label: Servicio
+              name: services
+              widget: list          
+              fields:
+                - { label: Servicio, name: service, widget: string }
+                - { label: Descripción, name: description, widget: text }
+                - { label: Icono, name: icon, widget: string }
+         - name: en
+           label: 'English'
+           widget: object
+           allow_add: false
+           collapsed: false
+           fields:
+            - label: Services
+              name: services
+              widget: list          
+              fields:
+                - { label: Title, name: title, widget: string }
+                - { label: URL, name: url, widget: string }        
+         - name: it
+           label: 'Italiano'
+           widget: object
+           allow_add: false
+           collapsed: false
+           fields:
+            - label: Services
+              name: services
+              widget: list          
+              fields:
+                - { label: Titolo, name: title, widget: string }
+                - { label: URL, name: url, widget: string }  
+      - label: "Translations"
+        name: "settings"
+        file: "src/_data/settings.yaml"
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Author, name: author, widget: string }
+          - { label: URL, name: url, widget: string }
+          - name: en
+            label: 'English'
+            widget: object
+            allow_add: false
+            collapsed: false
+            fields:
+                  - { label: Hero Title, name: heroTitle, widget: string }
+                  - { label: Hero Subtitle, name: heroSubTitle, widget: string }
+                  - { label: Hero Call to Action, name: heroCallToAction, widget: string }
+                  - { label: Services Main Title, name: serviceTitle, widget: string }
+                  - { label: Services Description, name: serviceDescription, widget: string }
+                  - { label: About Title, name: aboutTitle, widget: string }
+                  - { label: About Description, name: aboutDescription, widget: string } 
+                  - { label: Footer Navigation, name: navigationFooter, widget: string }  
+                  - { label: Footer's subtitle, name: footerSubtitle, widget: string }                                       
+          - name: it
+            label: 'Italiano'
+            widget: object
+            allow_add: false
+            collapsed: false
+            fields:
+                  - { label: Titolo Hero , name: heroTitle, widget: string }
+                  - { label: Sotitolo Hero, name: heroSubTitle, widget: string }
+                  - { label: Hero Call to Action, name: heroCallToAction, widget: string }
+                  - { label: Titolo per i Servizi, name: serviceTitle, widget: string }
+                  - { label: Descrizione Servizi, name: serviceDescription, widget: string }                  
+                  - { label: Titolo Chi Siamo, name: aboutTitle, widget: string }
+                  - { label: Descrizione Chi Siamo, name: aboutDescription, widget: string }
+                  - { label: Navigazione Footer, name: navigationFooter, widget: string }  
+                  - { label: Sotitolo Footer, name: footerSubtitle, widget: string }                                                                       
+          - name: es
+            label: 'Español'
+            widget: object
+            allow_add: false
+            collapsed: false
+            fields:
+                  - { label: Título Hero, name: heroTitle, widget: string }
+                  - { label: Subtítulo Hero, name: heroSubTitle, widget: string }
+                  - { label: Llamada a la Acción Hero, name: heroCallToAction, widget: string }
+                  - { label: Título de los servicios, name: serviceTitle, widget: string }
+                  - { label: Descripción de servicios, name: serviceDescription, widget: string }
+                  - { label: Título Sobre Nosotros, name: aboutTitle, widget: string }
+                  - { label: Descripción Sobre Nosotros, name: aboutDescription, widget: string }
+                  - { label: Navigazione Footer, name: navigationFooter, widget: string }                   
+                  - { label: Subtitulo Footer, name: footerSubtitle, widget: string }                                     
