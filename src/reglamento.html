@@ -6,7 +6,7 @@
 {% set reglamento = "RULES" %}
 {% endif %}
 
-{% set baseUrl = "/" %}
+
 
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
@@ -41,9 +41,7 @@
     </style>
 </head>
 <body>
-
-    <!-- Navbar -->
-    {% include "partials/navbar.html" %}
+ {% include "partials/navbar.html" %}
 
     <div class="min-h-screen py-12 sports-bg" x-data="{show: false}" x-init="setTimeout(() => show = true, 500)">
         
@@ -167,7 +165,6 @@
         
     </div>
 
-    {% include "partials/footer.html" %}
-
+ {% include "partials/footer.html" %}
 </body>
 </html>
