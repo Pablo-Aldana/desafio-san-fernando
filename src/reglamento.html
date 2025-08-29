@@ -1,0 +1,74 @@
+{% if page.lang == "es" %}
+{% set reglamento = "REGLAMENTO" %}
+{% elif page.lang == "it" %}
+{% set reglamento = "REGOLE" %}
+{% else %}
+{% set reglamento = "RULES" %}
+{% endif %}
+
+
+
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regolamenti Sportivi - San Fernando Challenge</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <style>
+        body { background: #000; font-family: 'Montserrat', sans-serif; color: #d9d9d9; min-height: 100vh; }
+        .gold-border { border-color: #bf914e; }
+        .gold-text { color: #bf914e; }
+        .gold-bg { background-color: rgba(191, 145, 78, 0.1); }
+        .box { background: rgba(20, 20, 20, 0.85); border: 2px solid #bf914e; box-shadow: 0 10px 25px rgba(0,0,0,0.5); transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .box:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(191,145,78,0.2); border-color: #d4b06c; }
+        .box:hover .icon-wrapper { transform: scale(1.1); }
+        .box:before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(191,145,78,0.1) 0%, transparent 70%); transform: rotate(30deg); z-index: 0; }
+        .icon-wrapper { background: linear-gradient(145deg, #1a140b 0%, #2a2114 100%); border: 2px solid #bf914e; transition: all 0.3s ease; }
+        .button { background: linear-gradient(145deg, #bf914e 0%, #9c753a 100%); color: #1a140b; font-weight: 600; border: none; transition: all 0.3s ease; }
+        .button:hover { background: linear-gradient(145deg, #d4b06c 0%, #bf914e 100%); transform: scale(1.05); }
+        .sports-bg { background: radial-gradient(circle at 10% 20%, rgba(191,145,78,0.05) 0%, transparent 20%), radial-gradient(circle at 90% 80%, rgba(191,145,78,0.05) 0%, transparent 20%), linear-gradient(to bottom, #000, #111); background-size: cover; background-position: center; }
+        .header-title { position: relative; padding-bottom: 15px; }
+        .header-title:after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100px; height: 3px; background: #bf914e; border-radius: 3px; }
+        .social-icon { transition: all 0.3s ease; border: 1px solid #bf914e; }
+        .social-icon:hover { color: #bf914e; transform: translateY(-3px); background: rgba(191,145,78,0.1); }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(191,145,78,0.4); } 70% { box-shadow: 0 0 0 10px rgba(191,145,78,0); } 100% { box-shadow: 0 0 0 0 rgba(191,145,78,0); } }
+    </style>
+</head>
+<body>
+ {% include "partials/navbar.html" %}
+
+    <div class="min-h-screen py-12 sports-bg" x-data="{show: false}" x-init="setTimeout(() => show = true, 500)">
+        
+        <!-- Header -->
+        <header class="py-8 mb-8 text-center">
+            <div class="container mx-auto px-4">
+              <h2 class="inline my-4 text-5xl font-normal font-capturesmallz leading-tight text-dsfprimary">
+                {{reglamento}}
+              </h2>
+            </div>
+        </header>
+
+        <!-- Grid dei box -->
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {% include "partials/reglamentobox/box1.html" %}
+         {% include "partials/reglamentobox/box2.html" %}
+         {% include "partials/reglamentobox/box3.html" %}
+         {% include "partials/reglamentobox/box4.html" %}
+        {% include "partials/reglamentobox/box5.html" %}
+        {% include "partials/reglamentobox/box6.html" %}
+        </div>
+        </div>
+        
+    </div>
+
+ {% include "partials/footer.html" %}
+</body>
+</html>
